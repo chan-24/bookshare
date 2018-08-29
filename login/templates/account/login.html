@@ -1,0 +1,26 @@
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+<body>
+    
+    
+	<hr>
+    <div class="container">
+        <form method="POST">
+            {% csrf_token %}
+            <p>
+                <label>Username</label>
+                <input type="text" name="username" required="TRUE">
+            </p>
+            <p>
+                <label>Password</label>
+                <input type="password" name="password" required="TRUE">
+            </p>
+            <button type="submit">Login</button>
+            <p>forgot password ? <a href="/index/reset-password">click here</a></p>
+        </form>
+    </div>
+    
+</body>
